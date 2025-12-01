@@ -60,6 +60,9 @@ int main(int argc, char** argv) {
       }
 
       if (showHex){
+        char* buf = nb_hexdump(argv[1]);
+        mu_label(ctx, buf);
+        printf("DEBUG: geting hex of file %s\n", argv[1]);
       }
 
       if (showFiles){  
